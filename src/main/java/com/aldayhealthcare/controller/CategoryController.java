@@ -6,8 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
-@RestController
+@CrossOrigin(origins = {"http://localhost:5173", "https://alday-healthcare.netlify.app"}, maxAge = 3600)@RestController
 @RequestMapping("/api/categories")
 public class CategoryController {
 
